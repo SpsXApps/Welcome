@@ -20,63 +20,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/sps_logo.png">
     
-    <style>
-        .privacy-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 24px;
-        }
-        .privacy-card {
-            background: var(--color-card);
-            border: 1px solid var(--color-border);
-            border-radius: var(--border-radius-lg);
-            padding: 48px;
-            backdrop-filter: blur(12px);
-            margin-top: 40px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-        .privacy-card h3 {
-            font-family: var(--font-heading);
-            color: #ffffff;
-            font-size: 1.5rem;
-            margin-top: 32px;
-            margin-bottom: 16px;
-            font-weight: 700;
-        }
-        .privacy-card h3:first-of-type {
-            margin-top: 0;
-        }
-        .privacy-card p {
-            color: var(--color-text-secondary);
-            line-height: 1.7;
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-        .privacy-card ul {
-            list-style-type: disc;
-            padding-left: 24px;
-            margin-bottom: 20px;
-            color: var(--color-text-secondary);
-        }
-        .privacy-card li {
-            margin-bottom: 8px;
-            line-height: 1.6;
-        }
-        .last-updated {
-            font-size: 0.85rem;
-            color: var(--color-cyan);
-            font-family: var(--font-heading);
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 12px;
-            font-weight: 700;
-        }
-        @media (max-width: 768px) {
-            .privacy-card {
-                padding: 24px;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Background glowing ambient lights -->
@@ -129,7 +72,7 @@
             </div>
             
             <div class="privacy-card">
-                <div class="last-updated">Last Updated: June 2026</div>
+                <div class="last-updated">Last Updated: 2026-07-04</div>
                 <p>Welcome to Sps X Apps. We are committed to protecting your personal data and respecting your privacy. This Privacy Policy outlines our practices regarding data collection, usage, and protection in relation to our website and our applications. Sanjay Pratap Singh is hereby referred to as the "Service Provider"</p>
                 
                 <h3>1. Information We Collect</h3>
@@ -237,7 +180,7 @@
                 <h4>Legal</h4>
                 <ul class="footer-links">
                     <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="tos.html">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
@@ -248,30 +191,8 @@
     </footer>
 
     <!-- App Script (Used for Mobile Navigation Toggle) -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-            const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
-            const mobileNavLinks = document.querySelectorAll('.mobile-nav-item');
+    <!-- App Script -->
+    <script src="script.js"></script>
 
-            function toggleMobileMenu() {
-                mobileNavToggle.classList.toggle('active');
-                mobileNavOverlay.classList.toggle('open');
-                document.body.classList.toggle('no-scroll');
-            }
-
-            if (mobileNavToggle) {
-                mobileNavToggle.addEventListener('click', toggleMobileMenu);
-            }
-
-            mobileNavLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    if (mobileNavOverlay.classList.contains('open')) {
-                        toggleMobileMenu();
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
