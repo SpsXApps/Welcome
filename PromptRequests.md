@@ -21,3 +21,5 @@
 - Agreements
     - Privacy Policy
     - Terms of Service
+
+- I have copied privacy.html to tos.html, copy contents from tos.md to tos.html under privacy card in similar formatting
